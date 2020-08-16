@@ -1,0 +1,14 @@
+.pagination {
+    color: black;
+    margin-top: 20px;
+    margin-left: 20%;
+    cursor: pointer;
+
+    .page-link {
+        color: black;
+    }
+
+    a:hover {
+        color: red;
+    }
+}
