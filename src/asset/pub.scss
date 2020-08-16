@@ -1,12 +1,13 @@
 .pub {
     color: white; 
-    border: 1px solid black;
+    // border: 1px solid black;
     position: relative;
     margin-left: 20%;
     height: 700px;
-    width: 115%;
+    width: 100%;
     margin-top: 60px;
     background-color: rgba(0, 0, 0, 0.342);
+    border: 10px solid red;
 
 }
 
@@ -55,4 +56,16 @@ h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:"1400px"){
+    .pub {
+        color: white; 
+        border: 1px solid black;
+        height: auto;
+        width: 100%;
+        margin-left: 0px;
+    
+    }
 }

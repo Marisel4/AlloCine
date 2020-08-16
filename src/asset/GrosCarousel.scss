@@ -25,4 +25,30 @@
 }
 
 
+@media screen and (max-width: 600px) {
+    .Gros {
+        margin-bottom: 0px;
+
+        img{
+            height: 250px;
+            width: 100%;
+            text-align: inherit;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gros-titre{
+            color: white;
+            background-color: rgba(0, 0, 0, 0.418);
+            text-align: center;
+            margin-top: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 100%;
+        
+        }
+    }
+  }
+
+
 

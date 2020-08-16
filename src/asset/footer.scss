@@ -18,3 +18,15 @@ footer{
         margin: 20px;
     }
 }
+
+
+@media screen and (max-width: 600px) {
+    footer {
+        height: 500px;
+
+        .iconify{
+            font-size: 35px;
+            margin: 10px;
+        }
+    }
+  }

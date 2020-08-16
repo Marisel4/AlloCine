@@ -1,7 +1,36 @@
-.pagination {
+.pagination1 {
     color: black;
     margin-top: 20px;
-    margin-left: 20%;
+    margin-left: 38%;
+    display: none;
+    cursor: pointer;
+
+    .page-link {
+        color: black;
+    }
+
+    a:hover {
+        color: red;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .pagination1 {
+        display: block;
+    }
+    .pagination2{
+        display: none;
+    }
+  }
+
+.pagination2 {
+    color: black;
+    margin-top: 20px;
+    margin-left: 40%;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
     cursor: pointer;
 
     .page-link {
