@@ -11,12 +11,12 @@ class GrosCarousel extends React.Component{
         if(!(top==undefined)){
           card = top.map((item)=>{
               if(item == top[0]){
-              return  <div class="carousel-item active">
-            <a href={'/Detail/'+ item.id}><img src={getImageFromApi(item.backdrop_path)} class="d-block w-80" alt="..." /></a>
+              return  <div class="carousel-item active " style={{width:"100%"}}>
+            <div><img src={getImageFromApi(item.backdrop_path)} class="d-block w-100" alt="..." /></div>
             </div>
             } else{
-               return <div class="carousel-item">
-            <a href={'/Detail/'+ item.id} ><img src={getImageFromApi(item.backdrop_path)} class="d-block w-80" alt="..." /></a>
+               return <div class="carousel-item" style={{width:"100%"}}>
+            <a href={'/Detail/'+ item.id} ><img src={getImageFromApi(item.backdrop_path)} class="d-block w-100" alt="..." /></a>
             </div>
             }
             
@@ -25,18 +25,22 @@ class GrosCarousel extends React.Component{
         }
         return (
             <div className="Gros">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        {card}
+                <div id="carouselExampleSlidesOnly" className=" row carousel slide mb-5" data-ride="carousel">
+                    <div class="col">
+                        <div class="carousel-inner">
+                            {card}
+                        </div>
+                        <div className="gros-titre">
+                            <p>Y A DU SOLEIL ET DU CINÉMA</p>
+                            <p>Notre sélection spéciale</p>
+                        </div> 
                     </div>
-                    <div className="gros-titre">
-                    <p>Y A DU SOLEIL ET DU CINÉMA</p>
-                    <p>Notre sélection spéciale</p>
-           </div> 
-</div>       
- 
-                
-            </div>
+                        
+                </div>       
+             </div>
+
+
+            
         )
     }
 }

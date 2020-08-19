@@ -5,6 +5,7 @@ class titre extends React.Component{
     render(){
           
           return (
+              
             
            <div className="pub">
                <h1>3 raisons de voir ce film</h1>
@@ -19,10 +20,11 @@ class titre extends React.Component{
                <div className="presse">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, suscipit? Quis dolore laudantium, neque veniam odo blanditiis sint!</p>
                </div>
-
+               
            </div>         
-        
-            
+    
+
+           
         )
     }
 }

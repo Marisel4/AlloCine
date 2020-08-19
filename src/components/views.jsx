@@ -1,10 +1,16 @@
 import React from 'react';
+
 import '../asset/Header.scss'
+import '../asset/vieu.scss'
+
 import Carousel from './carousel'
 import GrosCarousel from './GrosCaroussel'
 import Pub from './pub'
-import '../asset/vieu.scss'
-import Pagination from '../components/pagination'
+
+import Pagination from './pagination'
+import CarouselNew from "./NewCarousel"
+
+
 
 
 class DetailFilm extends React.Component{
@@ -14,7 +20,7 @@ class DetailFilm extends React.Component{
     
         return(
             <>
-                <GrosCarousel top={top}/>
+                <CarouselNew/>
                 <div className="container">
                 <div>
                 <Carousel titre="Films" data1={data1} data2 ={data2} data3 ={data3} data4 ={data4} />

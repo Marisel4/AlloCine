@@ -1,16 +1,24 @@
 import React from 'react';
-import logo, { ReactComponent } from './logo.svg';
-import './App.css';
+
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./asset/body.scss"
+
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+
+import {getFilmsFromApiWithSearchedText, getTopFilms} from './api/Api'
+
+import GrosCarousel from './components/GrosCaroussel'
 import Header from './components/header'
 import Carousel from './components/carousel'
 import Footer from './components/Footer'
-import GrosCarousel from './components/GrosCaroussel'
-import {getFilmsFromApiWithSearchedText, getTopFilms} from './api/Api'
 import DetailFilm from './components/detailFilm'
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import Vue1 from './components/vieu1'
+
+import Vue1 from './components/views'
 import titre from './components/titre'
 import Pub from './components/pub'
+// import carouselG from './components/CarouseG'
+
+import logo, { ReactComponent } from './logo.svg';
 
 class App extends React.Component{
 
@@ -45,7 +53,7 @@ class App extends React.Component{
       console.log("je suis " +  this.Topfilms);
   })
 
-    getFilmsFromApiWithSearchedText("love", this.page).then(data => {
+    getFilmsFromApiWithSearchedText("horror", this.page).then(data => {
       this.setState({ films1: data.results })
       console.log(data.results);
   })
@@ -191,6 +199,7 @@ getFilmsFromApiWithSearchedText("guerre",this.page).then(data => {
     return (
 <BrowserRouter>
             <Header recherche={this._searchTextInputChanged} />
+            
             
             <Switch>
                 <Route exact path="/" component={()=> <Vue1 top={this.state.Topfilms}  data1={this.state.films1} data2 ={this.state.films2} data3 ={this.state.films3} data4 ={this.state.films4} data5 ={this.state.films5} data6 ={this.state.films6} data7 ={this.state.films7} data8 ={this.state.films8}  data9={this.state.films9} data10 ={this.state.films10} data11 ={this.state.films11} data12 ={this.state.films12} next={this.next}  previous={this.previous} />}  />

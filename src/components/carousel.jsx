@@ -90,7 +90,8 @@ class Header extends React.Component{
       
       
         return (
-          <div>
+          <div className="mb-5 mt-5">
+
             
             <div className="titre">
               <h4>{titre}</h4>
@@ -130,6 +131,8 @@ class Header extends React.Component{
             </div>
             
           </div>
+
+
             
         )
     }
