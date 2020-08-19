@@ -9,6 +9,7 @@ import Pub from './pub'
 
 import Pagination from './pagination'
 import CarouselNew from "./NewCarousel"
+import Video from './Video'
 
 
 
@@ -21,6 +22,7 @@ class DetailFilm extends React.Component{
         return(
             <>
                 <CarouselNew/>
+                
                 <div className="container">
                 <div>
                 <Carousel titre="Films" data1={data1} data2 ={data2} data3 ={data3} data4 ={data4} />
@@ -32,6 +34,7 @@ class DetailFilm extends React.Component{
                     <Pub />
                 </div>
                 </div>
+                <Video/>
                
 
             </>

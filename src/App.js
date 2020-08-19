@@ -13,6 +13,7 @@ import Header from './components/header'
 import Carousel from './components/carousel'
 import Footer from './components/Footer'
 import DetailFilm from './components/detailFilm'
+import Video from './components/Video'
 
 import Vue1 from './components/views'
 import titre from './components/titre'
