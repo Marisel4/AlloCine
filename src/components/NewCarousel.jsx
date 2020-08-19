@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 
+
 import captain from "../asset/image/Captainmarvel2.jpg"
 import spider from "../asset/image/spiderman.jpg"
 import avengers from "../asset/image/avengers.jpg"
@@ -73,7 +74,7 @@ const NewCarousel = () => {
             onExited={() => setAnimating(false)}
             key={item.src}
           >
-            <img style={{width: "100%", height: "100vh"}} src={item.src} alt={item.altText} />
+            <img style={{width: "100%"}}  className="slides"   src={item.src} alt={item.altText} />
             <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
           </CarouselItem>
         );

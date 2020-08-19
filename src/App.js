@@ -3,6 +3,7 @@ import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./asset/body.scss"
 
+
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import {getFilmsFromApiWithSearchedText, getTopFilms} from './api/Api'
